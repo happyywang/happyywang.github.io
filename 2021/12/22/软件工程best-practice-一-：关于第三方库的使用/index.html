@@ -4,17 +4,17 @@
   <meta charset="utf-8">
   
   
-  <title>今日开心事 | Hexo</title>
+  <title>软件工程best practice(一)：关于第三方库的使用 | Hexo</title>
   <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-  <meta name="description" content="今天最开心的事莫过于从Twitter上获悉happy xiao开放了他全部的付费文章，可以一点点看起来了，每一篇都需要些时间消化。 每周二是生活奇旅newsletter的发布日，由于上周才订阅，今天是我收到的第一篇，发现文章提到一个点，正是自己最近在反思的问题，即玩好自己的游戏，少judge别人。 下午把孩子们送去中文课，自己在周围溜达，去看了房子的进展，发现主体已经搭建完毕，特意带了耳机，边溜达">
+  <meta name="description" content="软件工程best practice(一)：关于第三方库的使用  使用第三方库需遵守其许可协议 应用程序不应直接调用第三方库，而是通过facade design patten（外观设计模式），这样会避免第三方库和应用程序间的紧耦合，也方便未来用更新的库或其它库来替换该库 第三方库也应被纳入应用程序功能测试集 开发团队应使用那些被积极维护的库">
 <meta property="og:type" content="article">
-<meta property="og:title" content="今日开心事">
-<meta property="og:url" content="http://example.com/2021/09/28/%E4%BB%8A%E6%97%A5%E5%BC%80%E5%BF%83%E4%BA%8B/index.html">
+<meta property="og:title" content="软件工程best practice(一)：关于第三方库的使用">
+<meta property="og:url" content="http://example.com/2021/12/22/%E8%BD%AF%E4%BB%B6%E5%B7%A5%E7%A8%8Bbest-practice-%E4%B8%80-%EF%BC%9A%E5%85%B3%E4%BA%8E%E7%AC%AC%E4%B8%89%E6%96%B9%E5%BA%93%E7%9A%84%E4%BD%BF%E7%94%A8/index.html">
 <meta property="og:site_name" content="Hexo">
-<meta property="og:description" content="今天最开心的事莫过于从Twitter上获悉happy xiao开放了他全部的付费文章，可以一点点看起来了，每一篇都需要些时间消化。 每周二是生活奇旅newsletter的发布日，由于上周才订阅，今天是我收到的第一篇，发现文章提到一个点，正是自己最近在反思的问题，即玩好自己的游戏，少judge别人。 下午把孩子们送去中文课，自己在周围溜达，去看了房子的进展，发现主体已经搭建完毕，特意带了耳机，边溜达">
+<meta property="og:description" content="软件工程best practice(一)：关于第三方库的使用  使用第三方库需遵守其许可协议 应用程序不应直接调用第三方库，而是通过facade design patten（外观设计模式），这样会避免第三方库和应用程序间的紧耦合，也方便未来用更新的库或其它库来替换该库 第三方库也应被纳入应用程序功能测试集 开发团队应使用那些被积极维护的库">
 <meta property="og:locale" content="en_US">
-<meta property="article:published_time" content="2021-09-28T20:26:23.000Z">
-<meta property="article:modified_time" content="2021-09-28T20:53:12.662Z">
+<meta property="article:published_time" content="2021-12-22T18:41:09.000Z">
+<meta property="article:modified_time" content="2021-12-22T18:50:27.205Z">
 <meta property="article:author" content="John Doe">
 <meta name="twitter:card" content="summary">
   
@@ -73,10 +73,10 @@
 </header>
 
       <div class="outer">
-        <section id="main"><article id="post-今日开心事" class="h-entry article article-type-post" itemprop="blogPost" itemscope itemtype="https://schema.org/BlogPosting">
+        <section id="main"><article id="post-软件工程best-practice-一-：关于第三方库的使用" class="h-entry article article-type-post" itemprop="blogPost" itemscope itemtype="https://schema.org/BlogPosting">
   <div class="article-meta">
-    <a href="/2021/09/28/%E4%BB%8A%E6%97%A5%E5%BC%80%E5%BF%83%E4%BA%8B/" class="article-date">
-  <time class="dt-published" datetime="2021-09-28T20:26:23.000Z" itemprop="datePublished">2021-09-28</time>
+    <a href="/2021/12/22/%E8%BD%AF%E4%BB%B6%E5%B7%A5%E7%A8%8Bbest-practice-%E4%B8%80-%EF%BC%9A%E5%85%B3%E4%BA%8E%E7%AC%AC%E4%B8%89%E6%96%B9%E5%BA%93%E7%9A%84%E4%BD%BF%E7%94%A8/" class="article-date">
+  <time class="dt-published" datetime="2021-12-22T18:41:09.000Z" itemprop="datePublished">2021-12-22</time>
 </a>
     
   </div>
@@ -87,7 +87,7 @@
         
   
     <h1 class="p-name article-title" itemprop="headline name">
-      今日开心事
+      软件工程best practice(一)：关于第三方库的使用
     </h1>
   
 
@@ -95,15 +95,18 @@
     
     <div class="e-content article-entry" itemprop="articleBody">
       
-        <p>今天最开心的事莫过于从Twitter上获悉happy xiao开放了他全部的付费文章，可以一点点看起来了，每一篇都需要些时间消化。</p>
-<p>每周二是生活奇旅newsletter的发布日，由于上周才订阅，今天是我收到的第一篇，发现文章提到一个点，正是自己最近在反思的问题，即玩好自己的游戏，少judge别人。</p>
-<p>下午把孩子们送去中文课，自己在周围溜达，去看了房子的进展，发现主体已经搭建完毕，特意带了耳机，边溜达边听Podcast，一周里最放松的一刻。最近又发现一个好听的中文Podcast：得意忘形。听到了他们超好听的一期节目：探讨快乐是什么。今天听他们无主题闲聊也很有趣，我点开听的时候，看了一眼，以为时长40多分钟，后来才发现，我看错了，是4小时多，目前只听了一半，但确定会把它听完。</p>
-<p>最近每天蹲厕错时会看会Twitter，三天了，依旧觉得Twitter上的神人太多，段子太多。比如全是诸如此类的内容：if you are not willing to be mocked, you will never be able to lead.  Writing is an antidote to over-thinking etc. 用Twitter的目标之一是学英语，最终希望训练出看英语如同看母语一样，毫不费力。看吧。</p>
+        <p>软件工程best practice(一)：关于第三方库的使用</p>
+<ol>
+<li>使用第三方库需遵守其许可协议</li>
+<li>应用程序不应直接调用第三方库，而是通过facade design patten（外观设计模式），这样会避免第三方库和应用程序间的紧耦合，也方便未来用更新的库或其它库来替换该库</li>
+<li>第三方库也应被纳入应用程序功能测试集</li>
+<li>开发团队应使用那些被积极维护的库</li>
+</ol>
 
       
     </div>
     <footer class="article-footer">
-      <a data-url="http://example.com/2021/09/28/%E4%BB%8A%E6%97%A5%E5%BC%80%E5%BF%83%E4%BA%8B/" data-id="cku4k2syr0000g4uc7ue3gr7m" data-title="今日开心事" class="article-share-link">Share</a>
+      <a data-url="http://example.com/2021/12/22/%E8%BD%AF%E4%BB%B6%E5%B7%A5%E7%A8%8Bbest-practice-%E4%B8%80-%EF%BC%9A%E5%85%B3%E4%BA%8E%E7%AC%AC%E4%B8%89%E6%96%B9%E5%BA%93%E7%9A%84%E4%BD%BF%E7%94%A8/" data-id="ckxhw7sce0000t8uc3ruld9g0" data-title="软件工程best practice(一)：关于第三方库的使用" class="article-share-link">Share</a>
       
       
       
@@ -113,19 +116,10 @@
     
 <nav id="article-nav">
   
-    <a href="/2021/09/29/%E5%B0%8F%E8%AE%A1%E5%88%92/" id="article-nav-newer" class="article-nav-link-wrap">
-      <strong class="article-nav-caption">Newer</strong>
-      <div class="article-nav-title">
-        
-          小计划
-        
-      </div>
-    </a>
   
-  
-    <a href="/2021/09/27/%E6%A0%B8%E5%BF%83%E4%B9%A0%E6%83%AF/" id="article-nav-older" class="article-nav-link-wrap">
+    <a href="/2021/12/21/ipad%E6%91%B8%E7%B4%A2%E6%9C%9F%E5%B0%8F%E8%BF%9B%E5%B1%95/" id="article-nav-older" class="article-nav-link-wrap">
       <strong class="article-nav-caption">Older</strong>
-      <div class="article-nav-title">核心习惯</div>
+      <div class="article-nav-title">ipad摸索期小进展</div>
     </a>
   
 </nav>
