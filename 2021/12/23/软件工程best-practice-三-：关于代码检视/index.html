@@ -4,17 +4,17 @@
   <meta charset="utf-8">
   
   
-  <title>David-Perell-50天写作课程（十七）边读边记笔记 | Hexo</title>
+  <title>软件工程best practice(三)：关于代码检视 | Hexo</title>
   <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-  <meta name="description" content="David-Perell-50天写作课程（十七）边读边记笔记 Write while you read 记笔记会让你的阅读变得高效。 对作家来说，阅读不只是获取信息，更是激发灵感。Descartes曾说：阅读好书就如同和几个世纪里最聪明的优秀的思想对话。你的读的好书越多，越容易产生the best ideas. 但是most of those ideas disappea if you do no">
+  <meta name="description" content="软件工程best practice(三)：关于代码检视  代码坚实的优先级应高于开发任务 代码检视的流程应该是自动化的，而非手动的，可以通过比如GitHub, Crucible, Review Board等工具完成 每次发送的检视代码最好不要超过300到400行，考虑将一个大的功能拆分成开发人员可单独检视的小任务 检视者应该能够记录在代码检视上花费的时间 检视者应清楚地了解他正在检视的代码的验收标">
 <meta property="og:type" content="article">
-<meta property="og:title" content="David-Perell-50天写作课程（十七）边读边记笔记">
-<meta property="og:url" content="http://example.com/2021/11/05/David-Perell-50%E5%A4%A9%E5%86%99%E4%BD%9C%E8%AF%BE%E7%A8%8B%EF%BC%88%E5%8D%81%E4%B8%83%EF%BC%89%E8%BE%B9%E8%AF%BB%E8%BE%B9%E8%AE%B0%E7%AC%94%E8%AE%B0/index.html">
+<meta property="og:title" content="软件工程best practice(三)：关于代码检视">
+<meta property="og:url" content="http://example.com/2021/12/23/%E8%BD%AF%E4%BB%B6%E5%B7%A5%E7%A8%8Bbest-practice-%E4%B8%89-%EF%BC%9A%E5%85%B3%E4%BA%8E%E4%BB%A3%E7%A0%81%E6%A3%80%E8%A7%86/index.html">
 <meta property="og:site_name" content="Hexo">
-<meta property="og:description" content="David-Perell-50天写作课程（十七）边读边记笔记 Write while you read 记笔记会让你的阅读变得高效。 对作家来说，阅读不只是获取信息，更是激发灵感。Descartes曾说：阅读好书就如同和几个世纪里最聪明的优秀的思想对话。你的读的好书越多，越容易产生the best ideas. 但是most of those ideas disappea if you do no">
+<meta property="og:description" content="软件工程best practice(三)：关于代码检视  代码坚实的优先级应高于开发任务 代码检视的流程应该是自动化的，而非手动的，可以通过比如GitHub, Crucible, Review Board等工具完成 每次发送的检视代码最好不要超过300到400行，考虑将一个大的功能拆分成开发人员可单独检视的小任务 检视者应该能够记录在代码检视上花费的时间 检视者应清楚地了解他正在检视的代码的验收标">
 <meta property="og:locale" content="en_US">
-<meta property="article:published_time" content="2021-11-05T17:22:26.000Z">
-<meta property="article:modified_time" content="2021-11-05T17:53:29.857Z">
+<meta property="article:published_time" content="2021-12-23T09:14:26.000Z">
+<meta property="article:modified_time" content="2021-12-23T09:35:27.960Z">
 <meta property="article:author" content="John Doe">
 <meta name="twitter:card" content="summary">
   
@@ -73,10 +73,10 @@
 </header>
 
       <div class="outer">
-        <section id="main"><article id="post-David-Perell-50天写作课程（十七）边读边记笔记" class="h-entry article article-type-post" itemprop="blogPost" itemscope itemtype="https://schema.org/BlogPosting">
+        <section id="main"><article id="post-软件工程best-practice-三-：关于代码检视" class="h-entry article article-type-post" itemprop="blogPost" itemscope itemtype="https://schema.org/BlogPosting">
   <div class="article-meta">
-    <a href="/2021/11/05/David-Perell-50%E5%A4%A9%E5%86%99%E4%BD%9C%E8%AF%BE%E7%A8%8B%EF%BC%88%E5%8D%81%E4%B8%83%EF%BC%89%E8%BE%B9%E8%AF%BB%E8%BE%B9%E8%AE%B0%E7%AC%94%E8%AE%B0/" class="article-date">
-  <time class="dt-published" datetime="2021-11-05T17:22:26.000Z" itemprop="datePublished">2021-11-05</time>
+    <a href="/2021/12/23/%E8%BD%AF%E4%BB%B6%E5%B7%A5%E7%A8%8Bbest-practice-%E4%B8%89-%EF%BC%9A%E5%85%B3%E4%BA%8E%E4%BB%A3%E7%A0%81%E6%A3%80%E8%A7%86/" class="article-date">
+  <time class="dt-published" datetime="2021-12-23T09:14:26.000Z" itemprop="datePublished">2021-12-23</time>
 </a>
     
   </div>
@@ -87,7 +87,7 @@
         
   
     <h1 class="p-name article-title" itemprop="headline name">
-      David-Perell-50天写作课程（十七）边读边记笔记
+      软件工程best practice(三)：关于代码检视
     </h1>
   
 
@@ -95,18 +95,21 @@
     
     <div class="e-content article-entry" itemprop="articleBody">
       
-        <p>David-Perell-50天写作课程（十七）边读边记笔记 Write while you read</p>
-<p>记笔记会让你的阅读变得高效。</p>
-<p>对作家来说，阅读不只是获取信息，更是激发灵感。Descartes曾说：阅读好书就如同和几个世纪里最聪明的优秀的思想对话。你的读的好书越多，越容易产生the best ideas. 但是most of those ideas disappea if you do not capture them in the moment, while the idea is still fresh. 但是如果做了笔记，就可以很好积累这些ideas.</p>
-<p>你的笔记应该足够轻量级以让你能持续地记录下去。数字笔记可以让你的阅读更高效by making your thoughts searchable. 遗憾的是当前很多工具，像kindle, pocket, Instrapaper更多的只是提供文本高亮功能，大部人人止于长长的文本高亮列表，却再也不会回看。</p>
-<p>记笔记的时候，最好用自己的语言来表述你高亮的段落。并且不意味着只写summary, 还要记录下让你产生共鸣的那些内容的原因，以及他是如何联系到你当前的工作的。笔记要保持轻量级且evergreen. 每条笔记不要超过3分钟。他们只是你写作的初稿，无需完美，长度视你的阅读而定，太短会缺乏上下文，太长又会影响阅读。</p>
-<p>笔记系统一旦建立，可终身搜索提取，注意多关注那些timeless ideas instead of current events.</p>
-<p>这确保你不用总是从一张白纸开始写作。</p>
+        <p>软件工程best practice(三)：关于代码检视</p>
+<ol>
+<li>代码坚实的优先级应高于开发任务</li>
+<li>代码检视的流程应该是自动化的，而非手动的，可以通过比如GitHub, Crucible, Review Board等工具完成</li>
+<li>每次发送的检视代码最好不要超过300到400行，考虑将一个大的功能拆分成开发人员可单独检视的小任务</li>
+<li>检视者应该能够记录在代码检视上花费的时间</li>
+<li>检视者应清楚地了解他正在检视的代码的验收标准</li>
+<li>检视者应根据一个公司内部审视过的代码审查清单检视代码</li>
+<li>每次提交要经过1到2名团队成员的检视，然后才能将代码push到主分支</li>
+</ol>
 
       
     </div>
     <footer class="article-footer">
-      <a data-url="http://example.com/2021/11/05/David-Perell-50%E5%A4%A9%E5%86%99%E4%BD%9C%E8%AF%BE%E7%A8%8B%EF%BC%88%E5%8D%81%E4%B8%83%EF%BC%89%E8%BE%B9%E8%AF%BB%E8%BE%B9%E8%AE%B0%E7%AC%94%E8%AE%B0/" data-id="ckvmofuzj0000dguc8u1w7o8p" data-title="David-Perell-50天写作课程（十七）边读边记笔记" class="article-share-link">Share</a>
+      <a data-url="http://example.com/2021/12/23/%E8%BD%AF%E4%BB%B6%E5%B7%A5%E7%A8%8Bbest-practice-%E4%B8%89-%EF%BC%9A%E5%85%B3%E4%BA%8E%E4%BB%A3%E7%A0%81%E6%A3%80%E8%A7%86/" data-id="ckxirree50000y8uc20cm1wf4" data-title="软件工程best practice(三)：关于代码检视" class="article-share-link">Share</a>
       
       
       
@@ -116,19 +119,10 @@
     
 <nav id="article-nav">
   
-    <a href="/2021/11/06/David-Perell-50%E5%A4%A9%E5%86%99%E4%BD%9C%E8%AF%BE%E7%A8%8B%EF%BC%88%E5%8D%81%E5%85%AB%EF%BC%89%E8%BE%B9%E8%B5%B0%E8%BE%B9%E5%86%99/" id="article-nav-newer" class="article-nav-link-wrap">
-      <strong class="article-nav-caption">Newer</strong>
-      <div class="article-nav-title">
-        
-          David-Perell-50天写作课程（十八）边走边写
-        
-      </div>
-    </a>
   
-  
-    <a href="/2021/11/04/David-Perell-50%E5%A4%A9%E5%86%99%E4%BD%9C%E8%AF%BE%E7%A8%8B%EF%BC%88%E5%8D%81%E5%85%AD%EF%BC%89POP%E5%86%99%E4%BD%9C%E6%B3%95/" id="article-nav-older" class="article-nav-link-wrap">
+    <a href="/2021/12/23/%E8%BD%AF%E4%BB%B6%E5%B7%A5%E7%A8%8Bbest-practice-%E4%BA%8C-%EF%BC%9A%E5%85%B3%E4%BA%8Elogging%E5%92%8C%E7%9B%91%E6%8E%A7/" id="article-nav-older" class="article-nav-link-wrap">
       <strong class="article-nav-caption">Older</strong>
-      <div class="article-nav-title">David-Perell-50天写作课程（十六）POP写作法</div>
+      <div class="article-nav-title">软件工程best practice(二)：关于logging和监控</div>
     </a>
   
 </nav>
