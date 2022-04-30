@@ -71,6 +71,59 @@
       <div class="outer">
         <section id="main">
   
+    <article id="post-学到第一招：关于如何精准搜索开源项目" class="h-entry article article-type-post" itemprop="blogPost" itemscope itemtype="https://schema.org/BlogPosting">
+  <div class="article-meta">
+    <a href="/2021/12/31/%E5%AD%A6%E5%88%B0%E7%AC%AC%E4%B8%80%E6%8B%9B%EF%BC%9A%E5%85%B3%E4%BA%8E%E5%A6%82%E4%BD%95%E7%B2%BE%E5%87%86%E6%90%9C%E7%B4%A2%E5%BC%80%E6%BA%90%E9%A1%B9%E7%9B%AE/" class="article-date">
+  <time class="dt-published" datetime="2021-12-31T09:46:45.000Z" itemprop="datePublished">2021-12-31</time>
+</a>
+    
+  </div>
+  <div class="article-inner">
+    
+    
+      <header class="article-header">
+        
+  
+    <h1 itemprop="name">
+      <a class="p-name article-title" href="/2021/12/31/%E5%AD%A6%E5%88%B0%E7%AC%AC%E4%B8%80%E6%8B%9B%EF%BC%9A%E5%85%B3%E4%BA%8E%E5%A6%82%E4%BD%95%E7%B2%BE%E5%87%86%E6%90%9C%E7%B4%A2%E5%BC%80%E6%BA%90%E9%A1%B9%E7%9B%AE/">学到第一招：关于如何精准搜索开源项目</a>
+    </h1>
+  
+
+      </header>
+    
+    <div class="e-content article-entry" itemprop="articleBody">
+      
+        <p>学到第一招：关于如何精准搜索开源项目：即运用高级条件组合选择法（name / readme / description / forks / stars / language / pushed时间 等）</p>
+<p>命令如下：</p>
+<ul>
+<li>根据名字搜索</li>
+</ul>
+<p>​        in:<strong>name</strong> spring boot <strong>stars</strong>:&gt;1000 <strong>forks</strong>:&gt;500</p>
+<ul>
+<li>根据Readme文件搜索</li>
+</ul>
+<p>​        in:<strong>readme</strong> spring boot <strong>language</strong>: java <strong>stars</strong>:&gt;1000</p>
+<ul>
+<li>根据描述搜索</li>
+</ul>
+<p>​        in:<strong>description</strong> spring boot <strong>language</strong>:java <strong>stars</strong>:&gt;1000 <strong>pushed</strong>:&gt;2020-06-01</p>
+<p>尝试了一下，果然好用~</p>
+
+      
+    </div>
+    <footer class="article-footer">
+      <a data-url="http://example.com/2021/12/31/%E5%AD%A6%E5%88%B0%E7%AC%AC%E4%B8%80%E6%8B%9B%EF%BC%9A%E5%85%B3%E4%BA%8E%E5%A6%82%E4%BD%95%E7%B2%BE%E5%87%86%E6%90%9C%E7%B4%A2%E5%BC%80%E6%BA%90%E9%A1%B9%E7%9B%AE/" data-id="ckxu8735w0000souceyvb56r6" data-title="学到第一招：关于如何精准搜索开源项目" class="article-share-link">Share</a>
+      
+      
+      
+    </footer>
+  </div>
+  
+</article>
+
+
+
+  
     <article id="post-有关开源" class="h-entry article article-type-post" itemprop="blogPost" itemscope itemtype="https://schema.org/BlogPosting">
   <div class="article-meta">
     <a href="/2021/12/30/%E6%9C%89%E5%85%B3%E5%BC%80%E6%BA%90/" class="article-date">
@@ -579,51 +632,6 @@
 
 
   
-    <article id="post-软件工程best-practice-一-：关于第三方库的使用" class="h-entry article article-type-post" itemprop="blogPost" itemscope itemtype="https://schema.org/BlogPosting">
-  <div class="article-meta">
-    <a href="/2021/12/22/%E8%BD%AF%E4%BB%B6%E5%B7%A5%E7%A8%8Bbest-practice-%E4%B8%80-%EF%BC%9A%E5%85%B3%E4%BA%8E%E7%AC%AC%E4%B8%89%E6%96%B9%E5%BA%93%E7%9A%84%E4%BD%BF%E7%94%A8/" class="article-date">
-  <time class="dt-published" datetime="2021-12-22T18:41:09.000Z" itemprop="datePublished">2021-12-22</time>
-</a>
-    
-  </div>
-  <div class="article-inner">
-    
-    
-      <header class="article-header">
-        
-  
-    <h1 itemprop="name">
-      <a class="p-name article-title" href="/2021/12/22/%E8%BD%AF%E4%BB%B6%E5%B7%A5%E7%A8%8Bbest-practice-%E4%B8%80-%EF%BC%9A%E5%85%B3%E4%BA%8E%E7%AC%AC%E4%B8%89%E6%96%B9%E5%BA%93%E7%9A%84%E4%BD%BF%E7%94%A8/">软件工程best practice(一)：关于第三方库的使用</a>
-    </h1>
-  
-
-      </header>
-    
-    <div class="e-content article-entry" itemprop="articleBody">
-      
-        <p>软件工程best practice(一)：关于第三方库的使用</p>
-<ol>
-<li>使用第三方库需遵守其许可协议</li>
-<li>应用程序不应直接调用第三方库，而是通过facade design patten（外观设计模式），这样会避免第三方库和应用程序间的紧耦合，也方便未来用更新的库或其它库来替换该库</li>
-<li>第三方库也应被纳入应用程序功能测试集</li>
-<li>开发团队应使用那些被积极维护的库</li>
-</ol>
-
-      
-    </div>
-    <footer class="article-footer">
-      <a data-url="http://example.com/2021/12/22/%E8%BD%AF%E4%BB%B6%E5%B7%A5%E7%A8%8Bbest-practice-%E4%B8%80-%EF%BC%9A%E5%85%B3%E4%BA%8E%E7%AC%AC%E4%B8%89%E6%96%B9%E5%BA%93%E7%9A%84%E4%BD%BF%E7%94%A8/" data-id="ckxhw7sce0000t8uc3ruld9g0" data-title="软件工程best practice(一)：关于第三方库的使用" class="article-share-link">Share</a>
-      
-      
-      
-    </footer>
-  </div>
-  
-</article>
-
-
-
-  
 
 
   <nav id="page-nav">
@@ -660,6 +668,10 @@
       <ul>
         
           <li>
+            <a href="/2022/04/30/%E4%B8%80%E5%8F%A5%E8%AF%9D/">一句话</a>
+          </li>
+        
+          <li>
             <a href="/2022/04/29/Kevin-Kelly%E7%9A%84103%E6%9D%A1%E4%BA%BA%E7%94%9F%E6%84%9F%E6%82%9F/">Kevin Kelly的103条人生感悟</a>
           </li>
         
@@ -673,10 +685,6 @@
         
           <li>
             <a href="/2022/04/26/An-excellent-strategy-for-active-reading/">An excellent strategy for active reading</a>
-          </li>
-        
-          <li>
-            <a href="/2022/04/25/%E9%A1%B9%E7%9B%AE%E4%B8%8E%E4%B9%A0%E6%83%AF/">项目与习惯</a>
           </li>
         
       </ul>
